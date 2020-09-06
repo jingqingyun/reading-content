@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jingqingyun.reading.infra.dao.mapper.BookBizMapper">
+    <resultMap id="CountAndSumResultMap" type="com.jingqingyun.reading.infra.model.CountAndSumDO">
+        <result column="count" property="count"/>
+        <result column="sum" property="sum"/>
+    </resultMap>
+
+    <select id="sumWordAmount" resultType="java.lang.Integer">
+        select ifnull(sum(word_amount), 0) from reading.book
+        where id = ${bookId}
+    </select>
+
+    <select id="countArticlesAndSumWordAmount" resultMap="CountAndSumResultMap">
+        select
+               count(*) count,
+               ifnull(sum(word_amount), 0) sum
+        from reading.article
+        where book_id = ${bookId}
+    </select>
+</mapper>

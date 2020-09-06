@@ -1,0 +1,36 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: local
+  application:
+    name: reading-content
+  datasource:
+    url: "jdbc:mysql://localhost:3306/reading?connectTimeout=30000&socketTimeout=30000&allowMultiQueries=true
+        &maxRows=2000&queryTimeoutKillsConnection=true&useTimezone=true&zeroDateTimeBehavior=convertToNull
+        &maxRows=5000&useTimezone=true"
+    username: root
+    password: root
+    hikari:
+      minimum-idle: 4
+      idle-timeout: 180000
+  jpa:
+    open-in-view: false
+    show-sql: true
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: reading-content-local
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+logging:
+  file:
+    path: ./logs
+mybatis:
+  mapper-locations:
+    - classpath:vip/jingqingyun/mybatis/reading/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    default-statement-timeout: 30
+    default-fetch-size: 5000

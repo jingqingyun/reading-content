@@ -1,6 +1,7 @@
 package com.jingqingyun.reading.infra.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 import com.jingqingyun.common.utils.ModelUtils;
 import com.jingqingyun.reading.domain.model.entity.ArticleEntity;
@@ -18,6 +19,7 @@ import java.util.Optional;
  * @author jingqingyun
  * @date 2020-09-07
  */
+@Primary
 @Repository
 public class ArticleRepositoryImpl implements ArticleRepository {
 

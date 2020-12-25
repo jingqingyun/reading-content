@@ -20,6 +20,9 @@ public class ArticleQueryService {
     @Autowired
     private ArticleRepository articleRepository;
 
+    @Autowired
+    private ArticleRepository articleRepositoryWrapper;
+
     public Optional<ArticleDTO> getArticle(long id) {
         return articleRepository.findById(id).map(ModelUtils.convert(ArticleDTO.class));
     }

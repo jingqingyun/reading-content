@@ -1,6 +1,9 @@
 package com.jingqingyun.reading.app.model;
 
-import jakarta.validation.constraints.NotNull;
+import lombok.Data;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 /**
  * CreateBookDto
@@ -8,15 +11,15 @@ import jakarta.validation.constraints.NotNull;
  * @author jingqingyun
  * @date 2020/11/26
  */
-public class CreateBookDto {
+@Data
+public class CreateBookDTO {
 
-    @NotNull
+    @Pattern(regexp = "^[a-zA-Z0-9\\u4E00-\\u9FA5]+$")
     private String cnName;
 
     @NotNull
     private String engName;
 
-    @NotNull
     private String author;
 
     private String description;

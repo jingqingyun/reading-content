@@ -1,10 +1,10 @@
 server:
   port: 8082
-  servlet:
-    context-path: /reading-content
 spring:
+  config:
+    location:
   profiles:
-    active: local
+    active: test
   application:
     name: reading-content
   datasource:
@@ -22,10 +22,13 @@ spring:
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
-      group-id: reading-content-local
+      group-id: reading-content-test
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+logging:
+  file:
+    path: ./logs
 mybatis:
   mapper-locations:
     - classpath:com/jingqingyun/mybatis/reading/mapper/*.xml  # 指定mapper xml文件位置

@@ -1,7 +1,7 @@
 package com.jingqingyun.reading.domain.repository;
 
-import ddd.Repository;
 import com.jingqingyun.reading.domain.model.entity.ParagraphEntity;
+import ddd.Repository;
 
 /**
  * ParagraphRepository
@@ -10,4 +10,5 @@ import com.jingqingyun.reading.domain.model.entity.ParagraphEntity;
  * @date 2020-09-07
  */
 public interface ParagraphRepository extends Repository<ParagraphEntity> {
+
 }

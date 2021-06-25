@@ -1,10 +1,10 @@
 package com.jingqingyun.reading.infra.dao;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import com.jingqingyun.mybatis.reading.model.Book;
 import com.jingqingyun.reading.infra.dao.mapper.BookBizMapper;
 import com.jingqingyun.reading.infra.model.CountAndSumDO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * BookDao

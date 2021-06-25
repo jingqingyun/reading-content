@@ -1,8 +1,8 @@
 package com.jingqingyun.reading.infra.dao.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
 import com.jingqingyun.mybatis.reading.mapper.BookMapper;
 import com.jingqingyun.reading.infra.model.CountAndSumDO;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * BookBizMapper

@@ -1,12 +1,12 @@
 package com.jingqingyun.reading.infra.repository;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import com.jingqingyun.common.utils.ModelUtils;
 import com.jingqingyun.mybatis.reading.model.Book;
 import com.jingqingyun.reading.domain.model.entity.BookEntity;
 import com.jingqingyun.reading.domain.repository.BookRepository;
 import com.jingqingyun.reading.infra.dao.BookDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 /**
  * BookRepositoryImpl

@@ -1,10 +1,10 @@
 package com.jingqingyun.reading.app.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.jingqingyun.common.utils.ModelUtils;
 import com.jingqingyun.reading.app.model.ArticleDTO;
 import com.jingqingyun.reading.domain.repository.ArticleRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 

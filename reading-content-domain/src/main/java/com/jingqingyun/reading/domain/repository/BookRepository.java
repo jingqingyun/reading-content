@@ -1,7 +1,7 @@
 package com.jingqingyun.reading.domain.repository;
 
-import ddd.Repository;
 import com.jingqingyun.reading.domain.model.entity.BookEntity;
+import ddd.Repository;
 
 /**
  * BookRepository

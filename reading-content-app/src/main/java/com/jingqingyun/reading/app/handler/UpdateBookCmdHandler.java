@@ -1,8 +1,8 @@
 package com.jingqingyun.reading.app.handler;
 
+import com.jingqingyun.reading.app.model.command.UpdateBookCommand;
 import cqrs.CommandHandler;
 import org.springframework.stereotype.Component;
-import com.jingqingyun.reading.app.model.command.UpdateBookCommand;
 
 /**
  * UpdateBookCmdHandler

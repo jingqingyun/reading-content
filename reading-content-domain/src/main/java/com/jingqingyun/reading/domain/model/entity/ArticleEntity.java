@@ -1,11 +1,11 @@
 package com.jingqingyun.reading.domain.model.entity;
 
+import com.jingqingyun.reading.domain.model.vo.ArticleAudio;
+import com.jingqingyun.reading.domain.model.vo.ArticleContent;
 import ddd.DomainException;
 import ddd.Entity;
 import lombok.Data;
 import org.apache.commons.collections.CollectionUtils;
-import com.jingqingyun.reading.domain.model.vo.ArticleAudio;
-import com.jingqingyun.reading.domain.model.vo.ArticleContent;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

@@ -1,10 +1,10 @@
 package com.jingqingyun.reading.infra.dao;
 
+import com.jingqingyun.mybatis.reading.model.Article;
+import com.jingqingyun.reading.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.jingqingyun.mybatis.reading.model.Article;
-import com.jingqingyun.reading.BaseTest;
 
 import java.util.Optional;
 

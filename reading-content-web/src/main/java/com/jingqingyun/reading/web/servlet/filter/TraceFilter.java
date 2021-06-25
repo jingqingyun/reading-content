@@ -1,8 +1,8 @@
 package com.jingqingyun.reading.web.servlet.filter;
 
+import com.jingqingyun.common.utils.UuidUtils;
 import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
-import com.jingqingyun.common.utils.UuidUtils;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -25,7 +25,7 @@ public class TraceFilter extends HttpFilter {
 
     private static final long serialVersionUID = -2885183143290528396L;
 
-    private static final String TRACE_HEADER = "x-trace";
+    private static final String TRACE_HEADER = "logger_id";
 
     @Override
     protected void doFilter(HttpServletRequest request, HttpServletResponse response, FilterChain chain)

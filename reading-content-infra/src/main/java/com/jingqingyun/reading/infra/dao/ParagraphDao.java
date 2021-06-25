@@ -1,10 +1,10 @@
 package com.jingqingyun.reading.infra.dao;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import com.jingqingyun.mybatis.reading.model.Paragraph;
 import com.jingqingyun.mybatis.reading.model.ParagraphExample;
 import com.jingqingyun.reading.infra.dao.mapper.ParagraphBizMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 

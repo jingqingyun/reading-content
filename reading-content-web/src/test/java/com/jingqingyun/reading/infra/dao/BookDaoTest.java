@@ -1,10 +1,10 @@
 package com.jingqingyun.reading.infra.dao;
 
+import com.jingqingyun.reading.BaseTest;
+import com.jingqingyun.reading.infra.model.CountAndSumDO;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.jingqingyun.reading.BaseTest;
-import com.jingqingyun.reading.infra.model.CountAndSumDO;
 
 /**
  * BookDaoTest

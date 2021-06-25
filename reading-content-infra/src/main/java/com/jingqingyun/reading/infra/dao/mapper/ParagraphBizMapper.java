@@ -1,7 +1,7 @@
 package com.jingqingyun.reading.infra.dao.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
 import com.jingqingyun.mybatis.reading.mapper.ParagraphMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * ParagraphMapper
@@ -11,4 +11,5 @@ import com.jingqingyun.mybatis.reading.mapper.ParagraphMapper;
  */
 @Mapper
 public interface ParagraphBizMapper extends ParagraphMapper {
+
 }

@@ -20,10 +20,13 @@ public class LongSerializerComponent {
 
     @JsonSerialize
     public static class LongSerializer extends JsonSerializer<Long> {
+
         @Override
-        public void serialize(Long aLong, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
+        public void serialize(Long aLong, JsonGenerator jsonGenerator,
+                SerializerProvider serializerProvider) throws IOException {
             ToStringSerializer.instance.serialize(aLong, jsonGenerator, serializerProvider);
         }
+
     }
 
 }

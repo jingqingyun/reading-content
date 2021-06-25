@@ -1,8 +1,8 @@
 package com.jingqingyun.reading.app.model.command;
 
+import com.jingqingyun.reading.app.CommandTags;
 import cqrs.Command;
 import lombok.Data;
-import com.jingqingyun.reading.app.CommandTags;
 
 /**
  * BookCreateDTO

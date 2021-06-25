@@ -1,12 +1,12 @@
 package com.jingqingyun.reading.domain.model.entity;
 
+import com.jingqingyun.reading.domain.model.event.BookCreatedEvent;
+import com.jingqingyun.reading.domain.model.event.BookUpdatedEvent;
 import ddd.AggregateRoot;
 import ddd.EventPublisher;
 import ddd.EventPublisherDelegate;
 import lombok.Getter;
 import lombok.ToString;
-import com.jingqingyun.reading.domain.model.event.BookCreatedEvent;
-import com.jingqingyun.reading.domain.model.event.BookUpdatedEvent;
 
 import java.util.List;
 import java.util.Map;
@@ -66,7 +66,8 @@ public class BookEntity implements AggregateRoot<Long> {
 
     public void setArticles(List<ArticleEntity> articles) {
         this.articles = articles;
-        this.chapterArticleMap = articles.stream().collect(Collectors.toMap(ArticleEntity::getChapter, Function.identity()));
+        this.chapterArticleMap = articles.stream()
+                .collect(Collectors.toMap(ArticleEntity::getChapter, Function.identity()));
         this.wordAmount = articles.stream().mapToInt(ArticleEntity::getWordAmount).sum();
     }
 
